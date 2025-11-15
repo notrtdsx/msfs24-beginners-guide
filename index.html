@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSFS 2024 Beginner's Guide - Learn to Fly with Xbox Controller</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">✈️</span>
+                <span class="logo-text">MSFS 2024 Guide</span>
+            </div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+        <div class="progress-bar" id="progressBar"></div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Microsoft Flight Simulator 2024</h1>
+            <p class="hero-subtitle">A Practical Beginner's Guide for Xbox Controller Users</p>
+            <div class="hero-buttons">
+                <a href="#getting-started" class="btn btn-primary">Let's Start Flying</a>
+                <a href="#controller-setup" class="btn btn-secondary">Setup Controller</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll down to learn more</span>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Table of Contents -->
+        <aside class="toc">
+            <h3>Quick Navigation</h3>
+            <ul id="tocList">
+                <li><a href="#getting-started">Getting Started</a></li>
+                <li><a href="#controller-setup">Controller Setup</a></li>
+                <li><a href="#essential-controls">Essential Controls</a></li>
+                <li><a href="#aircraft-movements">Aircraft Movements</a></li>
+                <li><a href="#cockpit-instruments">Cockpit Instruments</a></li>
+                <li><a href="#preflight">Pre-Flight Setup</a></li>
+                <li><a href="#weather">Weather & Environment</a></li>
+                <li><a href="#flight-operations">Flight Operations</a></li>
+                <li><a href="#aerodynamics">Basic Aerodynamics</a></li>
+                <li><a href="#vfr-navigation">VFR Navigation</a></li>
+                <li><a href="#career-mode">Career Mode</a></li>
+                <li><a href="#flight-planning">Flight Planning</a></li>
+                <li><a href="#emergencies">Emergency Procedures</a></li>
+                <li><a href="#mistakes">Common Mistakes</a></li>
+                <li><a href="#radio-comms">Radio Communications</a></li>
+                <li><a href="#assistance">Assistance Settings</a></li>
+                <li><a href="#cockpit-interaction">Cockpit Interaction</a></li>
+                <li><a href="#atc">Air Traffic Control</a></li>
+                <li><a href="#autopilot">Autopilot</a></li>
+                <li><a href="#practice">Practice Exercises</a></li>
+                <li><a href="#addons">Add-Ons & Mods</a></li>
+                <li><a href="#camera">Camera Control</a></li>
+                <li><a href="#shortcuts">Shortcuts & Tips</a></li>
+                <li><a href="#controller-mapping">Controller Mapping</a></li>
+                <li><a href="#first-hour">First Hour Checklist</a></li>
+            </ul>
+        </aside>
+
+        <!-- Content Sections -->
+        <article class="content">
+            <!-- Getting Started -->
+            <section id="getting-started" class="section">
+                <h2>Welcome!</h2>
+                <p class="lead">So you want to learn how to fly in Microsoft Flight Simulator 2024? Great choice! Whether you're on Xbox or PC with a controller, this guide will help you get started and actually enjoy the experience without getting overwhelmed.</p>
+                
+                <div class="info-box highlight">
+                    <h3>What's New in MSFS 2024</h3>
+                    <ul>
+                        <li><strong>Enhanced Career Mode:</strong> Structured progression through various aviation careers including charter flights, cargo operations, search and rescue, firefighting, and more</li>
+                        <li><strong>Improved Weather Systems:</strong> More realistic and dynamic weather with enhanced turbulence modeling</li>
+                        <li><strong>Better Performance:</strong> Optimized rendering and streaming technology for smoother gameplay</li>
+                        <li><strong>Expanded Aircraft Library:</strong> More default aircraft including helicopters and specialized mission aircraft</li>
+                        <li><strong>Mission System:</strong> Pre-designed missions and challenges to build skills progressively</li>
+                        <li><strong>Improved ATC:</strong> More realistic air traffic control interactions and phraseology</li>
+                        <li><strong>Live Air Traffic:</strong> Real-world flight tracking integration for authentic traffic patterns</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Controller Setup -->
+            <section id="controller-setup" class="section">
+                <h2>Controller Setup (This is Important!)</h2>
+                <p>The Xbox controller works great with MSFS 2024, but you NEED to adjust the sensitivity first. If you skip this step, your plane will feel like you're trying to control a bucking bronco. Trust me on this one.</p>
+                
+                <div class="info-box">
+                    <h3>Recommended Settings to Start</h3>
+                    <p>Here's what worked for me and most people I've talked to:</p>
+                    <ul>
+                        <li><strong>Main Sensitivity:</strong> Reduce to approximately <strong>-50% to -80%</strong>. Many pilots find -50% sufficient for comfortable control, though some prefer -80% for even smoother response</li>
+                        <li><strong>Deadzone (Center):</strong> Set to <strong>10-15%</strong>. This prevents your controller's center drift from causing unwanted aircraft movement</li>
+                        <li><strong>Extremity/Far-End Deadzone:</strong> Set to <strong>-50%</strong>. This prevents full stick deflections from being registered as maximum control input</li>
+                        <li><strong>Reactivity:</strong> Leave linear unless using advanced configurations</li>
+                    </ul>
+                </div>
+
+                <div class="tip-box">
+                    <h4>💡 How to Know If It's Right</h4>
+                    <p>Take off and fly around a bit. If tiny stick movements make the plane jerk around like crazy, dial up the negative sensitivity more (like -60% or -70%). If it feels sluggish and unresponsive, bring it back down. You'll know it's right when small inputs = small movements.</p>
+                </div>
+
+                <h3>Advanced Axis Tuning</h3>
+                <p>Access your elevator and aileron axis assignments and click the settings icon. Use "Tweak Action Curve" to adjust specific axis sensitivity independently. For the left stick Y-axis (pitch), many pilots find -90% to -95% effective. The X-axis (roll) typically requires less adjustment.</p>
+
+                <h3>Controller Profile Management</h3>
+                <p>MSFS 2024 allows you to create multiple controller profiles for different aircraft types. Create separate profiles for:</p>
+                <ul>
+                    <li><strong>General Aviation</strong> (Cessna 152/172): Higher sensitivity reduction for gentle flying</li>
+                    <li><strong>Airliners</strong> (Boeing 737, Airbus A320): Moderate sensitivity for precise control</li>
+                    <li><strong>Aerobatic Aircraft:</strong> Lower sensitivity reduction for responsive maneuvering</li>
+                    <li><strong>Helicopters:</strong> Unique sensitivity curves for collective and cyclic controls</li>
+                </ul>
+                <p>To save a profile, configure your settings, then click "Save as Profile" and give it a descriptive name. Switch profiles from the main controls menu before flights.</p>
+            </section>
+
+            <!-- Essential Controls -->
+            <section id="essential-controls" class="section">
+                <h2>Essential Control Functions and Prioritization</h2>
+                <p>Begin by mastering these controls in this order of importance, allowing each to become intuitive before adding complexity:</p>
+
+                <div class="priority-card">
+                    <h3><span class="priority-badge">Priority 1</span> Basic Flight Control (Your First Flight)</h3>
+                    <dl>
+                        <dt>Pitch and Roll (Left Stick)</dt>
+                        <dd>Forward/backward tilts the nose up and down; left/right banks the wings. These controls directly keep the aircraft airborne and are instinctive.</dd>
+                        
+                        <dt>Throttle</dt>
+                        <dd>Most critical for flight management. You'll assign this to one of your analog inputs or buttons. For Xbox controllers without built-in throttles, use the right trigger (RT/LT) for push-to-increase throttle. At takeoff, gradually increase; during cruise, match power to altitude; during landing, reduce smoothly.</dd>
+                        
+                        <dt>Rudder</dt>
+                        <dd>Helps keep the aircraft centered on the runway during takeoff and landing. Default controller assignment varies, but many pilots map this to the right stick left/right or a button combination. During takeoff, the propeller torque pulls the nose left—apply small right rudder corrections to stay centered.</dd>
+                    </dl>
+                </div>
+
+                <div class="priority-card">
+                    <h3><span class="priority-badge">Priority 2</span> Essential Management Controls (Second Flight Onward)</h3>
+                    <dl>
+                        <dt>Flaps</dt>
+                        <dd>Extend flaps in stages to increase lift at lower speeds. For Cessna 172, typical progression: takeoff (flaps 10°), approach (flaps 15-20°), final descent (flaps 30°). Use default buttons or map to convenient Xbox buttons (like the D-Pad up/down).</dd>
+                        
+                        <dt>Landing Gear</dt>
+                        <dd>Toggle (up/down). For most general aviation aircraft, retract immediately after takeoff when passing through 500-1000 feet and extend during descent below 200 mph. Pulling up landing gear before takeoff is a common beginner mistake.</dd>
+                        
+                        <dt>Brakes</dt>
+                        <dd>Mixture of wheel brakes and reverse thrust control. Map to an easy-access button. Use gently on landing—excessive braking causes hard landings and penalties.</dd>
+                        
+                        <dt>Trim</dt>
+                        <dd>Critical for hands-off flying. Trim adjusts the aircraft's neutral position so it maintains altitude without constant control input. Assign trim up/down to convenient buttons. If your aircraft climbs despite level control input, trim down slightly. The goal is achieving level flight with no stick pressure needed.</dd>
+                    </dl>
+                </div>
+
+                <div class="priority-card">
+                    <h3><span class="priority-badge">Priority 3</span> Advanced Functions (Learn After Mastering Basics)</h3>
+                    <dl>
+                        <dt>Autopilot</dt>
+                        <dd>Once comfortable hand-flying, enable autopilot (AP button on primary display) to rest during cruise. Set altitude and heading modes. Not essential initially but incredibly useful.</dd>
+                        
+                        <dt>Camera Controls</dt>
+                        <dd>Right Mouse Button + drag to look around the cockpit. Hold Shift while inside the cockpit and use W/A/S/D to pan the view. Press Shift + Space to reset view to pilot position.</dd>
+                    </dl>
+                </div>
+            </section>
+
+            <!-- Aircraft Movements -->
+            <section id="aircraft-movements" class="section">
+                <h2>Understanding Aircraft Movements: Pitch, Yaw, and Roll</h2>
+                <p>These three movements control your aircraft's orientation:</p>
+                
+                <div class="movement-grid">
+                    <div class="movement-card">
+                        <h3>Pitch</h3>
+                        <p class="movement-icon">⬆️⬇️</p>
+                        <p>Movement around the wing axis (nose up/down). Controlled by forward/back stick input. Affects altitude and airspeed.</p>
+                    </div>
+                    <div class="movement-card">
+                        <h3>Roll</h3>
+                        <p class="movement-icon">↪️↩️</p>
+                        <p>Movement around the fuselage axis (left/right bank). Controlled by left/right stick input. Used to enter turns.</p>
+                    </div>
+                    <div class="movement-card">
+                        <h3>Yaw</h3>
+                        <p class="movement-icon">↔️</p>
+                        <p>Movement around the vertical axis (nose left/right). Controlled by rudder pedals or right stick. Mostly necessary for takeoff and landing alignment.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Cockpit Instruments -->
+            <section id="cockpit-instruments" class="section">
+                <h2>Essential Cockpit Instruments for Beginners</h2>
+                <p>Focus on these "Big 6" instruments initially—they provide all essential flight information:</p>
+                
+                <div class="instruments-grid">
+                    <div class="instrument-card">
+                        <div class="instrument-number">1</div>
+                        <h4>Airspeed Indicator</h4>
+                        <p>Speed in knots. Keep in the green arc for normal flight.</p>
+                    </div>
+                    <div class="instrument-card">
+                        <div class="instrument-number">2</div>
+                        <h4>Attitude Indicator</h4>
+                        <p>Shows the aircraft's pitch and bank angle.</p>
+                    </div>
+                    <div class="instrument-card">
+                        <div class="instrument-number">3</div>
+                        <h4>Altitude Indicator</h4>
+                        <p>Current height above ground level in hundreds of feet.</p>
+                    </div>
+                    <div class="instrument-card">
+                        <div class="instrument-number">4</div>
+                        <h4>Vertical Speed Indicator</h4>
+                        <p>Shows climb or descent rate in hundreds of feet per minute.</p>
+                    </div>
+                    <div class="instrument-card">
+                        <div class="instrument-number">5</div>
+                        <h4>Heading Indicator</h4>
+                        <p>Compass direction being flown.</p>
+                    </div>
+                    <div class="instrument-card">
+                        <div class="instrument-number">6</div>
+                        <h4>Throttle and RPM Gauge</h4>
+                        <p>Throttle position and engine revolutions per minute.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pre-Flight Setup -->
+            <section id="preflight" class="section">
+                <h2>Pre-Flight Setup and Aircraft Selection</h2>
+                
+                <h3>Pick the Right Plane to Learn In</h3>
+                <p>Start with the <strong>Cessna 172 Skyhawk</strong>. It's forgiving, stable, and doesn't have a bunch of complicated systems to learn. Think of it as the Honda Civic of planes - reliable and easy to drive (or fly).</p>
+
+                <div class="info-box">
+                    <h4>Other Beginner-Friendly Aircraft in MSFS 2024</h4>
+                    <ul>
+                        <li><strong>Diamond DA40:</strong> Modern glass cockpit, very stable and easy to hand-fly</li>
+                        <li><strong>Piper PA-28 Cherokee:</strong> Similar to Cessna 172, slightly sportier handling</li>
+                        <li><strong>Beechcraft Bonanza G36:</strong> Step up with retractable gear and more performance</li>
+                        <li><strong>Icon A5:</strong> Amphibious light sport aircraft, fun for scenic flights</li>
+                    </ul>
+                </div>
+
+                <div class="warning-box">
+                    <h4>⚠️ Don't Start With These (Seriously)</h4>
+                    <ul>
+                        <li>Jets and airliners - you'll spend 30 minutes just turning things on</li>
+                        <li>Helicopters - completely different beast, save for later</li>
+                        <li>Aerobatic planes - twitchy as hell, you'll spin out immediately</li>
+                        <li>Old warbirds - these things are hard to fly even for experienced simmers</li>
+                    </ul>
+                </div>
+
+                <h3>Quick Auto-Start</h3>
+                <p>Press <strong>Ctrl + E</strong> (PC) or use the in-cockpit EFB (Electronic Flight Bag) tablet menu to auto-start most default piston aircraft. On Xbox controller, access the toolbar menu to find the engine auto-start option.</p>
+
+                <h3>Entering the Cockpit</h3>
+                <p>Launch from a parking spot or runway. Use <strong>Shift + C</strong> to instantly enter the pilot's seat.</p>
+
+                <h3>Choosing Your Departure</h3>
+                <p>Start at a small, clear airport with a long runway and minimal traffic.</p>
+            </section>
+
+            <!-- Weather and Environment -->
+            <section id="weather" class="section">
+                <h2>Weather and Environmental Conditions</h2>
+                
+                <h3>Understanding Weather Impact</h3>
+                <p>Weather dramatically affects flight performance and difficulty. MSFS 2024 features live weather from real-world data or custom presets.</p>
+
+                <div class="info-box highlight">
+                    <h4>Beginner-Friendly Weather Settings</h4>
+                    <ul>
+                        <li><strong>Clear Skies:</strong> 10-15 mile visibility, calm winds (0-5 knots)</li>
+                        <li><strong>Temperature:</strong> Standard (59°F/15°C at sea level)</li>
+                        <li><strong>QNH Pressure:</strong> 29.92 inHg (standard atmospheric pressure)</li>
+                        <li><strong>Time of Day:</strong> Midday for best visibility</li>
+                    </ul>
+                </div>
+
+                <h3>Weather Phenomena to Understand</h3>
+                
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h4 class="accordion-header">Wind</h4>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><strong>Headwind:</strong> Slows ground speed, increases lift (helpful for takeoff/landing)</li>
+                                <li><strong>Tailwind:</strong> Increases ground speed, reduces lift (challenging for landing)</li>
+                                <li><strong>Crosswind:</strong> Pushes aircraft sideways, requires rudder correction</li>
+                                <li><strong>Wind shear:</strong> Sudden wind changes, causes turbulence</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h4 class="accordion-header">Visibility</h4>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>VFR minimums: 3 miles visibility, clear of clouds</li>
+                                <li>Fog/haze reduces landmark identification</li>
+                                <li>Rain reduces windscreen visibility</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h4 class="accordion-header">Turbulence</h4>
+                        <div class="accordion-content">
+                            <ul>
+                                <li><strong>Light:</strong> Minor bumps, no control issues</li>
+                                <li><strong>Moderate:</strong> Noticeable jolts, requires active control</li>
+                                <li><strong>Severe:</strong> Avoid flying (dangerous for aircraft)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h4 class="accordion-header">Icing</h4>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>Forms on wings at freezing temperatures in clouds</li>
+                                <li>Reduces lift and increases weight</li>
+                                <li>Enable anti-ice systems if equipped</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Time of Day Considerations</h3>
+                <ul>
+                    <li><strong>Dawn/Dusk:</strong> Beautiful but challenging visibility</li>
+                    <li><strong>Midday:</strong> Optimal visibility and thermal conditions</li>
+                    <li><strong>Night:</strong> Requires instrument proficiency and runway lighting knowledge</li>
+                </ul>
+            </section>
+
+            <!-- Flight Operations -->
+            <section id="flight-operations" class="section">
+                <h2>Step-by-Step Flight Operations</h2>
+
+                <h3>Takeoff Procedure</h3>
+                <ol class="procedure-list">
+                    <li><strong>Release parking brake:</strong> Press Ctrl + Space or use the lever in the cockpit</li>
+                    <li><strong>Set flaps:</strong> Extend 10° flaps</li>
+                    <li><strong>Apply throttle smoothly:</strong> Push forward gradually</li>
+                    <li><strong>Maintain centerline with rudder:</strong> Apply gentle right rudder trim if needed</li>
+                    <li><strong>Monitor airspeed:</strong> Takeoff at 60-65 knots</li>
+                    <li><strong>Rotate gently:</strong> At takeoff speed, gently pull back on the yoke</li>
+                    <li><strong>Climb out:</strong> Climb out at 500-700 fpm. Retract landing gear (if available) and flaps gradually</li>
+                    <li><strong>Level off:</strong> Level at desired altitude, reduce throttle for cruise</li>
+                </ol>
+
+                <h3>Trimming for Level Flight</h3>
+                <p>Trim the aircraft so it maintains altitude without pressure on the controls.</p>
+                <ul>
+                    <li>Nose pitches up: Apply <strong>trim down</strong></li>
+                    <li>Nose pitches down: Apply <strong>trim up</strong></li>
+                </ul>
+
+                <h3>Descent and Approach</h3>
+                <ol class="procedure-list">
+                    <li>Begin descent 3,000 feet from your destination at 300-500 fpm</li>
+                    <li>Reduce throttle</li>
+                    <li>Maintain steady descent rate</li>
+                    <li>Extend flaps in 10° stages at approach speeds</li>
+                    <li>Gear down and flaps full by 500 ft, stable at landing speed</li>
+                </ol>
+
+                <h3>Landing Procedure</h3>
+                <ol class="procedure-list">
+                    <li>Approach at 3° glide slope and 50-100 feet altitude</li>
+                    <li>Maintain descent rate and airspeed</li>
+                    <li>Flare at 30-50 feet above ground</li>
+                    <li>Touchdown smoothly at 60-65 knots</li>
+                    <li>Apply brakes smoothly and use rudder to stay straight</li>
+                    <li>Retract flaps on the ground, taxi to parking, and shut down</li>
+                </ol>
+            </section>
+
+            <!-- Aerodynamics -->
+            <section id="aerodynamics" class="section">
+                <h2>Basic Aerodynamics for Flight Understanding</h2>
+                
+                <div class="aero-grid">
+                    <div class="aero-card">
+                        <h4>Lift</h4>
+                        <p>Upward force generated by wings. Increases with speed and pitch, too much pitch causes stalls.</p>
+                    </div>
+                    <div class="aero-card">
+                        <h4>Drag</h4>
+                        <p>Air resistance, increases with speed and flap extension.</p>
+                    </div>
+                    <div class="aero-card">
+                        <h4>Stall</h4>
+                        <p>Loss of lift from low speed or high pitch. Recovery: pitch nose down and regain speed.</p>
+                    </div>
+                    <div class="aero-card">
+                        <h4>Speed-Altitude Relationship</h4>
+                        <p>Higher speed = more lift = climb; lower speed = less lift = descent. Trim balances this.</p>
+                    </div>
+                    <div class="aero-card">
+                        <h4>Torque Effect</h4>
+                        <p>Propeller spin pulls the nose left; use right rudder to keep straight.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- VFR Navigation -->
+            <section id="vfr-navigation" class="section">
+                <h2>Visual Flight Rules (VFR) Navigation</h2>
+                
+                <h3>VFR Navigation Basics</h3>
+                <p>Visual Flight Rules allow navigation using outside references rather than instruments alone. This is the foundation of basic flying.</p>
+
+                <div class="info-box">
+                    <h4>Key VFR Concepts</h4>
+                    <ul>
+                        <li>Choose visible, distinct landmarks between airports (rivers, highways, cities, mountains)</li>
+                        <li>Follow them visually using pilotage (map reading)</li>
+                        <li>Use VFR map overlay (GPS moving map) for assistance</li>
+                        <li>Maintain VFR altitudes: Eastbound odd thousands + 500ft (3,500, 5,500), Westbound even thousands + 500ft (4,500, 6,500)</li>
+                        <li>Stay below 18,000 feet (Class A airspace requires IFR)</li>
+                    </ul>
+                </div>
+
+                <h3>VFR Sectional Charts</h3>
+                <p>MSFS 2024 includes built-in VFR charts showing:</p>
+                <ul>
+                    <li>Airport symbols and runway layouts</li>
+                    <li>Controlled airspace boundaries</li>
+                    <li>Terrain elevation and obstacles</li>
+                    <li>Navigation aids (VOR, NDB stations)</li>
+                    <li>Visual landmarks</li>
+                </ul>
+
+                <h3>Dead Reckoning Navigation</h3>
+                <ol>
+                    <li>Plot course on map between departure and destination</li>
+                    <li>Measure distance and calculate heading</li>
+                    <li>Account for wind drift</li>
+                    <li>Calculate time en route based on groundspeed</li>
+                    <li>Identify checkpoints every 10-15 minutes</li>
+                    <li>Verify position at each checkpoint</li>
+                </ol>
+
+                <h3>Using GPS Navigation</h3>
+                <p>Most modern GA aircraft have GPS:</p>
+                <ul>
+                    <li>Enter destination airport code</li>
+                    <li>Follow magenta line on moving map</li>
+                    <li>Monitor distance and time to destination</li>
+                    <li>Cross-reference with visual landmarks</li>
+                </ul>
+            </section>
+
+            <!-- Career Mode -->
+            <section id="career-mode" class="section">
+                <h2>Career Mode and Missions (MSFS 2024)</h2>
+                
+                <h3>Getting Started with Career Mode</h3>
+                <p>MSFS 2024's career mode provides structured progression and income-based gameplay. Start your aviation career with:</p>
+
+                <div class="career-grid">
+                    <div class="career-card">
+                        <h4>Charter Flights</h4>
+                        <p>Transport passengers to various destinations</p>
+                        <ul>
+                            <li>Start with short flights in light aircraft</li>
+                            <li>Progress to larger aircraft and longer routes</li>
+                            <li>Build reputation for on-time arrivals</li>
+                        </ul>
+                    </div>
+
+                    <div class="career-card">
+                        <h4>Cargo Operations</h4>
+                        <p>Deliver packages and freight</p>
+                        <ul>
+                            <li>Time-sensitive deliveries for bonus pay</li>
+                            <li>Weather challenges and remote destinations</li>
+                            <li>Unlock larger cargo aircraft</li>
+                        </ul>
+                    </div>
+
+                    <div class="career-card">
+                        <h4>Search and Rescue</h4>
+                        <p>Locate and assist people in distress</p>
+                        <ul>
+                            <li>Low-altitude search patterns</li>
+                            <li>Challenging weather and terrain</li>
+                            <li>Helicopter operations</li>
+                        </ul>
+                    </div>
+
+                    <div class="career-card">
+                        <h4>Firefighting</h4>
+                        <p>Aerial firefighting operations</p>
+                        <ul>
+                            <li>Water/retardant drops on forest fires</li>
+                            <li>Specialized aircraft (Air Tractor AT-802)</li>
+                            <li>Precision flying in smoky conditions</li>
+                        </ul>
+                    </div>
+
+                    <div class="career-card">
+                        <h4>VIP Transport</h4>
+                        <p>Executive charter flights</p>
+                        <ul>
+                            <li>High-end aircraft (jets and turboprops)</li>
+                            <li>Strict time requirements</li>
+                            <li>Premium destinations</li>
+                        </ul>
+                    </div>
+
+                    <div class="career-card">
+                        <h4>Medical Emergency</h4>
+                        <p>Air ambulance operations</p>
+                        <ul>
+                            <li>Critical time-sensitive flights</li>
+                            <li>Hospital-to-hospital transfers</li>
+                            <li>Night and adverse weather operations</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>Career Progression</h3>
+                <ul>
+                    <li>Earn in-game currency for completed missions</li>
+                    <li>Purchase and unlock new aircraft</li>
+                    <li>Expand to new operational bases</li>
+                    <li>Increase difficulty for higher rewards</li>
+                    <li>Build pilot ratings and certifications</li>
+                </ul>
+
+                <h3>Training Missions</h3>
+                <p>MSFS 2024 includes structured training:</p>
+                <ul>
+                    <li>Basic Flight: Takeoff, cruise, landing</li>
+                    <li>VFR Navigation: Cross-country flying</li>
+                    <li>IFR Introduction: Instrument procedures</li>
+                    <li>Advanced Procedures: Night flying, emergencies</li>
+                    <li>Type Rating: Specific aircraft training</li>
+                </ul>
+            </section>
+
+            <!-- Flight Planning -->
+            <section id="flight-planning" class="section">
+                <h2>Creating Simple Flight Plans</h2>
+
+                <h3>World Map Flight Planner</h3>
+                <ol class="procedure-list">
+                    <li>Open World Map from main menu</li>
+                    <li>Click "Search" for departure airport (e.g., KLAX)</li>
+                    <li>Click "Add Arrival" and search destination (e.g., KSAN)</li>
+                    <li>Choose VFR or IFR flight plan</li>
+                    <li>Set departure runway and time</li>
+                    <li>Choose weather preset or live weather</li>
+                    <li>Review route, altitude, and time</li>
+                    <li>Click "Fly" to load flight</li>
+                </ol>
+
+                <h3>IFR Flight Planning</h3>
+                <p>For instrument flights:</p>
+                <ol>
+                    <li>Select IFR flight plan option</li>
+                    <li>System auto-generates airways and waypoints</li>
+                    <li>Choose altitude (cruise FL150-FL250 for short flights)</li>
+                    <li>Review Standard Instrument Departure (SID) and Standard Terminal Arrival Route (STAR)</li>
+                    <li>Configure autopilot after takeoff</li>
+                </ol>
+
+                <h3>VFR Flight Planning</h3>
+                <ol>
+                    <li>Select VFR option for visual navigation</li>
+                    <li>Route shows direct line to destination</li>
+                    <li>Manually add waypoints for pilotage</li>
+                    <li>Use VFR sectional chart overlay</li>
+                    <li>Plan altitude to avoid terrain and airspace</li>
+                </ol>
+
+                <div class="tip-box">
+                    <h4>💡 Flight Plan Customization</h4>
+                    <ul>
+                        <li>Add custom waypoints by clicking map</li>
+                        <li>Adjust cruise altitude for weather/performance</li>
+                        <li>Set fuel quantity and aircraft loading</li>
+                        <li>Choose parking position or active runway</li>
+                        <li>Save flight plan for repeated use</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Emergency Procedures -->
+            <section id="emergencies" class="section">
+                <h2>Emergency Procedures and Safety</h2>
+
+                <div class="warning-box">
+                    <h3>⚠️ Engine Failure After Takeoff</h3>
+                    <ol>
+                        <li><strong>Maintain aircraft control</strong> - Don't panic, keep wings level</li>
+                        <li><strong>Establish best glide speed</strong> - Cessna 172: 65 knots</li>
+                        <li><strong>Choose landing spot</strong> - Look for roads, fields, or open areas ahead</li>
+                        <li><strong>Secure the engine</strong> - Mixture idle cutoff, fuel off, magnetos off</li>
+                        <li><strong>Attempt restart</strong> - If altitude permits, try restart checklist</li>
+                        <li><strong>Prepare for landing</strong> - Flaps as needed, touchdown at slowest safe speed</li>
+                        <li><strong>Mayday call</strong> - "Mayday, Mayday, Mayday" on 121.5 MHz</li>
+                    </ol>
+                </div>
+
+                <h3>Stall Recovery</h3>
+                <ol class="procedure-list">
+                    <li><strong>Release back pressure</strong> - Push yoke forward smoothly</li>
+                    <li><strong>Add full power</strong> - Advance throttle to maximum</li>
+                    <li><strong>Level wings</strong> - Use rudder to prevent spin</li>
+                    <li><strong>Recover to level flight</strong> - Gentle pull as speed increases</li>
+                    <li><strong>Never pull hard</strong> - Avoid secondary stall</li>
+                </ol>
+
+                <h3>Spin Recovery (PARE)</h3>
+                <ol class="procedure-list">
+                    <li><strong>P - Power</strong> - Reduce to idle</li>
+                    <li><strong>A - Ailerons</strong> - Neutralize to center</li>
+                    <li><strong>R - Rudder</strong> - Full opposite to spin direction</li>
+                    <li><strong>E - Elevator</strong> - Push forward to break stall</li>
+                    <li><strong>Recover from dive</strong> - Once rotation stops, return to level flight</li>
+                </ol>
+
+                <div class="info-box">
+                    <h4>Squawk Codes</h4>
+                    <ul>
+                        <li><strong>1200:</strong> VFR flight (normal)</li>
+                        <li><strong>7500:</strong> Hijacking</li>
+                        <li><strong>7600:</strong> Radio failure</li>
+                        <li><strong>7700:</strong> Emergency</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Common Mistakes -->
+            <section id="mistakes" class="section">
+                <h2>Mistakes Everyone Makes (Including Me)</h2>
+
+                <div class="mistakes-grid">
+                    <div class="mistake-card">
+                        <h4>Over-controlling</h4>
+                        <p><strong>Problem:</strong> Large, jerky control inputs</p>
+                        <p><strong>Solution:</strong> Use gentle, smooth inputs. Lower sensitivity if needed. Think "small corrections" not "big movements".</p>
+                    </div>
+
+                    <div class="mistake-card">
+                        <h4>Landing too fast</h4>
+                        <p><strong>Problem:</strong> Excessive approach speed causing hard landings</p>
+                        <p><strong>Solution:</strong> Plan descent early (3 miles out), reduce power progressively, target 60-65 knots, go around if unstable.</p>
+                    </div>
+
+                    <div class="mistake-card">
+                        <h4>Stalling on approach</h4>
+                        <p><strong>Problem:</strong> Flying too slow with nose too high</p>
+                        <p><strong>Solution:</strong> Maintain approach speed (65 knots), recover immediately if stalled - nose down, add power.</p>
+                    </div>
+
+                    <div class="mistake-card">
+                        <h4>Forgetting gear/flaps</h4>
+                        <p><strong>Problem:</strong> Landing with gear up or wrong flap setting</p>
+                        <p><strong>Solution:</strong> Use GUMPS checklist - Gas, Undercarriage, Mixture, Propeller, Seatbelts.</p>
+                    </div>
+
+                    <div class="mistake-card">
+                        <h4>Poor trim management</h4>
+                        <p><strong>Problem:</strong> Constant pressure needed on controls</p>
+                        <p><strong>Solution:</strong> Trim after every power/config change. Goal: hands-off level flight.</p>
+                    </div>
+
+                    <div class="mistake-card">
+                        <h4>Fixating on one instrument</h4>
+                        <p><strong>Problem:</strong> Staring at one gauge, missing others</p>
+                        <p><strong>Solution:</strong> Scan all six primary instruments in a pattern continuously.</p>
+                    </div>
+
+                    <div class="mistake-card">
+                        <h4>Chasing needles</h4>
+                        <p><strong>Problem:</strong> Constant control inputs trying to hold exact values</p>
+                        <p><strong>Solution:</strong> Make small corrections and wait for aircraft to stabilize.</p>
+                    </div>
+
+                    <div class="mistake-card">
+                        <h4>Not practicing go-arounds</h4>
+                        <p><strong>Problem:</strong> Forcing unstable approaches</p>
+                        <p><strong>Solution:</strong> If approach is unstable, apply full power, climb, and try again.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Radio Communications -->
+            <section id="radio-comms" class="section">
+                <h2>Radio Communication and Multiplayer</h2>
+
+                <h3>Radio Basics</h3>
+                <p>Aviation uses specific phraseology and procedures:</p>
+
+                <div class="info-box">
+                    <h4>Frequency Types</h4>
+                    <ul>
+                        <li><strong>ATIS</strong> (Automatic Terminal Information Service): Weather and airport info (listen first)</li>
+                        <li><strong>Clearance Delivery:</strong> IFR clearances before taxi</li>
+                        <li><strong>Ground:</strong> Taxi instructions and pushback</li>
+                        <li><strong>Tower:</strong> Takeoff and landing clearances</li>
+                        <li><strong>Departure/Approach:</strong> En route air traffic control</li>
+                        <li><strong>Center:</strong> High-altitude en route control</li>
+                        <li><strong>Unicom/CTAF:</strong> Uncontrolled airport common frequency (122.8 or specific)</li>
+                    </ul>
+                </div>
+
+                <h3>Standard Radio Calls</h3>
+                <div class="radio-example">
+                    <p><strong>Initial Contact:</strong> "[Facility] [Your callsign] [Location] [Request]"</p>
+                    <p class="example">Example: "Los Angeles Ground, Cessna 123AB at parking, request taxi with information Charlie"</p>
+                </div>
+
+                <div class="radio-example">
+                    <p><strong>Readback:</strong> Repeat clearances</p>
+                    <p class="example">"Cessna 123AB, taxi runway 24L via Alpha, hold short 24R"</p>
+                </div>
+
+                <h3>Phonetic Alphabet</h3>
+                <div class="phonetic-grid">
+                    <span>A=Alpha</span> <span>B=Bravo</span> <span>C=Charlie</span> <span>D=Delta</span>
+                    <span>E=Echo</span> <span>F=Foxtrot</span> <span>G=Golf</span> <span>H=Hotel</span>
+                    <span>I=India</span> <span>J=Juliet</span> <span>K=Kilo</span> <span>L=Lima</span>
+                    <span>M=Mike</span> <span>N=November</span> <span>O=Oscar</span> <span>P=Papa</span>
+                    <span>Q=Quebec</span> <span>R=Romeo</span> <span>S=Sierra</span> <span>T=Tango</span>
+                    <span>U=Uniform</span> <span>V=Victor</span> <span>W=Whiskey</span> <span>X=X-ray</span>
+                    <span>Y=Yankee</span> <span>Z=Zulu</span>
+                </div>
+
+                <h3>Multiplayer Etiquette</h3>
+                <ul>
+                    <li>Use realistic callsigns (N-numbers or airline callsigns)</li>
+                    <li>Follow proper ATC procedures</li>
+                    <li>Don't crash into other aircraft</li>
+                    <li>Respect controlled airspace</li>
+                    <li>Use text chat for coordination</li>
+                    <li>Avoid aerobatics near busy airports</li>
+                </ul>
+            </section>
+
+            <!-- Assistance Settings -->
+            <section id="assistance" class="section">
+                <h2>Difficulty Settings (No Shame in Starting Easy)</h2>
+
+                <div class="progression-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-badge">Initial</div>
+                        <div class="timeline-content">
+                            <h4>Beginning Settings</h4>
+                            <ul>
+                                <li>All assists enabled</li>
+                                <li>Crash and stress damage off</li>
+                                <li>Unlimited fuel</li>
+                                <li>Reduced turbulence</li>
+                                <li>Autopilot assist on</li>
+                                <li>Active markers and flight path displayed</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-badge">Improving</div>
+                        <div class="timeline-content">
+                            <h4>As You Improve</h4>
+                            <ul>
+                                <li>Disable autopilot assist</li>
+                                <li>Enable crash damage</li>
+                                <li>Realistic fuel consumption</li>
+                                <li>Standard turbulence</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-badge">Advanced</div>
+                        <div class="timeline-content">
+                            <h4>When Confident</h4>
+                            <ul>
+                                <li>All realistic assists</li>
+                                <li>Live weather enabled</li>
+                                <li>Live traffic on</li>
+                                <li>All damage systems active</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Cockpit Interaction -->
+            <section id="cockpit-interaction" class="section">
+                <h2>Cockpit Interaction and Navigation</h2>
+
+                <h3>Looking Around</h3>
+                <ul>
+                    <li>Hold right mouse and drag</li>
+                    <li>Shift + WASD to pan view</li>
+                    <li>Shift + Space to reset to pilot position</li>
+                </ul>
+
+                <h3>Switching Views</h3>
+                <ul>
+                    <li><strong>Shift + C:</strong> Toggle cockpit/walk mode</li>
+                    <li><strong>Shift + X:</strong> Drone camera</li>
+                    <li><strong>Alt + [1-9]:</strong> Custom saved views</li>
+                </ul>
+
+                <h3>Interacting with Controls</h3>
+                <p>Use cursor mode (RB + LS on controller) for clickable cockpit switches and knobs.</p>
+            </section>
+
+            <!-- ATC -->
+            <section id="atc" class="section">
+                <h2>Air Traffic Control (ATC) Basics</h2>
+
+                <ol class="procedure-list">
+                    <li>Request clearance from Ground/Tower</li>
+                    <li>Taxi to assigned runway</li>
+                    <li>Get takeoff clearance</li>
+                    <li>Switch to departure frequency after takeoff</li>
+                    <li>Switch to approach before landing</li>
+                    <li>Contact tower for landing clearance</li>
+                </ol>
+
+                <p>Enable or disable ATC assistance as desired until comfortable with procedures.</p>
+            </section>
+
+            <!-- Autopilot -->
+            <section id="autopilot" class="section">
+                <h2>Autopilot Fundamentals</h2>
+
+                <ol class="procedure-list">
+                    <li>Achieve stable cruise flight</li>
+                    <li>Press AP (Autopilot) button</li>
+                    <li>Set ALT (altitude hold)</li>
+                    <li>Set HDG (heading) or NAV (navigation) mode</li>
+                    <li>Set VS (vertical speed) if climbing/descending</li>
+                    <li>Monitor autopilot performance</li>
+                    <li>Disengage AP if needed or for landing</li>
+                </ol>
+
+                <div class="tip-box">
+                    <h4>💡 Autopilot Tips</h4>
+                    <p>Practice monitoring autopilot rather than relying on it completely. Always be ready to take manual control. Most autopilots should be disconnected before landing.</p>
+                </div>
+            </section>
+
+            <!-- Practice Exercises -->
+            <section id="practice" class="section">
+                <h2>Practice Exercises for Skill Building</h2>
+
+                <div class="practice-grid">
+                    <div class="practice-card">
+                        <h4>Takeoff Drills</h4>
+                        <p>Practice 5 takeoffs in a row at the same airport, focusing on smooth throttle application, centerline tracking, and rotation at correct speed.</p>
+                    </div>
+
+                    <div class="practice-card">
+                        <h4>Landing Practice</h4>
+                        <p>Practice 10 landings from short final approach, working on consistent airspeed, glide slope, flare timing, and smooth touchdowns.</p>
+                    </div>
+
+                    <div class="practice-card">
+                        <h4>Short Cross-Country</h4>
+                        <p>Plan and fly a 30-minute VFR flight between two airports, practicing navigation, altitude control, and frequency changes.</p>
+                    </div>
+
+                    <div class="practice-card">
+                        <h4>Traffic Patterns</h4>
+                        <p>Fly 5 complete traffic pattern laps, practicing each leg (crosswind, downwind, base, final) and proper altitude/speed management.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Add-Ons and Mods -->
+            <section id="addons" class="section">
+                <h2>Beginner-Friendly Add-Ons and Mods</h2>
+
+                <h3>Essential Free Tools</h3>
+                <div class="addons-grid">
+                    <div class="addon-card">
+                        <h4>Little Navmap</h4>
+                        <p>Comprehensive flight planning, maps, and navigation tracking. Shows your position in real-time.</p>
+                        <span class="addon-tag">Essential</span>
+                    </div>
+
+                    <div class="addon-card">
+                        <h4>Volanta</h4>
+                        <p>Flight tracking and logbook with beautiful flight replay functionality.</p>
+                        <span class="addon-tag">Recommended</span>
+                    </div>
+
+                    <div class="addon-card">
+                        <h4>SimBrief</h4>
+                        <p>Professional flight planning for IFR flights with detailed performance calculations.</p>
+                        <span class="addon-tag">Advanced</span>
+                    </div>
+
+                    <div class="addon-card">
+                        <h4>Flightsim.to</h4>
+                        <p>Free liveries, aircraft improvements, and community mods.</p>
+                        <span class="addon-tag">Essential</span>
+                    </div>
+                </div>
+
+                <h3>Recommended Free Aircraft</h3>
+                <ul>
+                    <li><strong>FlyByWire A32NX:</strong> Study-level Airbus A320neo (when ready for airliners)</li>
+                    <li><strong>iniBuilds A310:</strong> Free high-quality Airbus A310 widebody</li>
+                    <li><strong>HPG Airbus H145:</strong> Excellent helicopter for rotorcraft training</li>
+                </ul>
+
+                <div class="warning-box">
+                    <h4>⚠️ When to Add Mods</h4>
+                    <ul>
+                        <li>Start with default aircraft and scenery</li>
+                        <li>Master basic flying before adding complexity</li>
+                        <li>Add navigation tools (Little Navmap) immediately</li>
+                        <li>Wait on study-level aircraft until comfortable with systems</li>
+                        <li>Monitor performance - too many mods can impact frame rate</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Camera Control -->
+            <section id="camera" class="section">
+                <h2>Camera Control & Visual Awareness</h2>
+
+                <h3>Camera Tips</h3>
+                <ul>
+                    <li>Save custom views for frequently used angles (landing, takeoff, overhead panel)</li>
+                    <li>Practice switching views during turns and landing approaches</li>
+                    <li>Use drone camera to review landings and identify mistakes</li>
+                    <li>Experiment with cinematic camera for screenshots and videos</li>
+                </ul>
+
+                <h3>External View Controls</h3>
+                <ul>
+                    <li>Mouse drag to rotate around aircraft</li>
+                    <li>Scroll wheel to zoom in/out</li>
+                    <li>Number keys for preset external views</li>
+                </ul>
+            </section>
+
+            <!-- Shortcuts & Tips -->
+            <section id="shortcuts" class="section">
+                <h2>Quality-of-Life Features & Shortcuts</h2>
+
+                <div class="shortcuts-grid">
+                    <div class="shortcut-card">
+                        <div class="shortcut-key">Esc</div>
+                        <div class="shortcut-desc">Pause simulation</div>
+                    </div>
+                    <div class="shortcut-card">
+                        <div class="shortcut-key">Shift + Z</div>
+                        <div class="shortcut-desc">Slew mode (teleport aircraft)</div>
+                    </div>
+                    <div class="shortcut-card">
+                        <div class="shortcut-key">Ctrl + E</div>
+                        <div class="shortcut-desc">Auto-start engine</div>
+                    </div>
+                    <div class="shortcut-card">
+                        <div class="shortcut-key">Shift + C</div>
+                        <div class="shortcut-desc">Toggle cockpit view</div>
+                    </div>
+                    <div class="shortcut-card">
+                        <div class="shortcut-key">V</div>
+                        <div class="shortcut-desc">Cycle camera views</div>
+                    </div>
+                    <div class="shortcut-card">
+                        <div class="shortcut-key">A</div>
+                        <div class="shortcut-desc">Toggle autopilot</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Controller Mapping -->
+            <section id="controller-mapping" class="section">
+                <h2>Specific Xbox Controller Remapping</h2>
+
+                <table class="controller-table">
+                    <thead>
+                        <tr>
+                            <th>Function</th>
+                            <th>Suggested Button</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Throttle Increase</td>
+                            <td>RT (Right Trigger)</td>
+                        </tr>
+                        <tr>
+                            <td>Throttle Decrease</td>
+                            <td>LT (Left Trigger)</td>
+                        </tr>
+                        <tr>
+                            <td>Brakes</td>
+                            <td>LB (Left Bumper)</td>
+                        </tr>
+                        <tr>
+                            <td>Landing Gear Toggle</td>
+                            <td>RB (Right Bumper)</td>
+                        </tr>
+                        <tr>
+                            <td>Flaps Increase</td>
+                            <td>D-Pad Up</td>
+                        </tr>
+                        <tr>
+                            <td>Flaps Decrease</td>
+                            <td>D-Pad Down</td>
+                        </tr>
+                        <tr>
+                            <td>Trim Up</td>
+                            <td>D-Pad Right</td>
+                        </tr>
+                        <tr>
+                            <td>Trim Down</td>
+                            <td>D-Pad Left</td>
+                        </tr>
+                        <tr>
+                            <td>Autopilot Toggle</td>
+                            <td>Y Button</td>
+                        </tr>
+                        <tr>
+                            <td>Pause</td>
+                            <td>Menu Button</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- First Hour Checklist -->
+            <section id="first-hour" class="section">
+                <h2>Your First Session - What to Actually Do</h2>
+
+                <div class="checklist">
+                    <label class="checklist-item">
+                        <input type="checkbox">
+                        <span>Calibrate controller sensitivity and deadzones</span>
+                    </label>
+                    <label class="checklist-item">
+                        <input type="checkbox">
+                        <span>Pick a small airport and trainer aircraft (Cessna 152/172)</span>
+                    </label>
+                    <label class="checklist-item">
+                        <input type="checkbox">
+                        <span>Review cockpit layout and camera controls</span>
+                    </label>
+                    <label class="checklist-item">
+                        <input type="checkbox">
+                        <span>Practice takeoff, climb, and level cruise flight</span>
+                    </label>
+                    <label class="checklist-item">
+                        <input type="checkbox">
+                        <span>Practice trim adjustment for hands-off flight</span>
+                    </label>
+                    <label class="checklist-item">
+                        <input type="checkbox">
+                        <span>Practice basic navigation and turns</span>
+                    </label>
+                    <label class="checklist-item">
+                        <input type="checkbox">
+                        <span>Practice approach and landing procedures</span>
+                    </label>
+                    <label class="checklist-item">
+                        <input type="checkbox">
+                        <span>Complete at least 3 full flights from takeoff to landing</span>
+                    </label>
+                </div>
+
+                <div class="info-box highlight">
+                    <h3>You're Ready to Fly!</h3>
+                    <p>Learning to fly takes time, so don't stress if things don't click right away. I started with all the assists on and crashed more times than I can count. That's totally normal!</p>
+                    <p>Start simple, use whatever helps you enjoy the experience, and gradually challenge yourself when you feel ready. There's no "correct" way to enjoy flight sim - some people love checklists and procedures, others just want to buzz around landmarks in a Cub.</p>
+                    <p><strong>Most importantly: have fun up there!</strong> ✈️</p>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p><strong>MSFS 2024 Beginner's Guide</strong></p>
+            <p>Made for new pilots who just want to fly. Updated November 2025.</p>
+            <p style="margin-top: 1rem; font-size: 0.9rem;">Good luck and enjoy your flights! ✈️</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
