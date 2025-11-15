@@ -52,6 +52,7 @@
                 <li><a href="#weather">Weather & Environment</a></li>
                 <li><a href="#flight-operations">Flight Operations</a></li>
                 <li><a href="#aerodynamics">Basic Aerodynamics</a></li>
+                <li><a href="#fuel-management">Fuel Management</a></li>
                 <li><a href="#vfr-navigation">VFR Navigation</a></li>
                 <li><a href="#career-mode">Career Mode</a></li>
                 <li><a href="#flight-planning">Flight Planning</a></li>
@@ -136,13 +137,13 @@
                     <h3><span class="priority-badge">Priority 1</span> Basic Flight Control (Your First Flight)</h3>
                     <dl>
                         <dt>Pitch and Roll (Left Stick)</dt>
-                        <dd>Forward/backward tilts the nose up and down; left/right banks the wings. These controls directly keep the aircraft airborne and are instinctive.</dd>
+                        <dd>Forward/backward tilts the nose up and down; left/right banks the wings. These controls directly keep the aircraft airborne and are instinctive. Small inputs = small movements. Think smooth and gradual, not aggressive.</dd>
                         
-                        <dt>Throttle</dt>
-                        <dd>Most critical for flight management. You'll assign this to one of your analog inputs or buttons. For Xbox controllers without built-in throttles, use the right trigger (RT/LT) for push-to-increase throttle. At takeoff, gradually increase; during cruise, match power to altitude; during landing, reduce smoothly.</dd>
+                        <dt>Throttle (RT = Increase, LT = Decrease)</dt>
+                        <dd>Most critical for flight management. The throttle controls your engine power and ultimately your speed and altitude capability. <strong>Takeoff:</strong> Full power (100%) for acceleration. <strong>Climb:</strong> 75-80% once airborne. <strong>Cruise:</strong> 65-75% for efficient level flight. <strong>Descent:</strong> 40-60% depending on desired rate. <strong>Approach:</strong> 50-60% to maintain safe approach speed. <strong>Landing:</strong> Reduce to idle over the threshold. Listen to your engine - smooth power changes are always better than abrupt ones.</dd>
                         
                         <dt>Rudder</dt>
-                        <dd>Helps keep the aircraft centered on the runway during takeoff and landing. Default controller assignment varies, but many pilots map this to the right stick left/right or a button combination. During takeoff, the propeller torque pulls the nose left—apply small right rudder corrections to stay centered.</dd>
+                        <dd>Helps keep the aircraft centered on the runway during takeoff and landing. Default controller assignment varies, but many pilots map this to the right stick left/right or a button combination. During takeoff, the propeller torque pulls the nose left—apply small right rudder corrections to stay centered. Also essential for coordinated turns and crosswind corrections.</dd>
                     </dl>
                 </div>
 
@@ -341,11 +342,36 @@
                     </div>
                 </div>
 
+                <h3>Understanding Wind and How It Affects Your Flight</h3>
+                <div class="info-box">
+                    <h4>Wind Components</h4>
+                    <ul>
+                        <li><strong>Headwind:</strong> Wind blowing toward you - slows groundspeed, increases performance (shorter takeoff/landing)</li>
+                        <li><strong>Tailwind:</strong> Wind from behind - increases groundspeed, decreases performance (longer takeoff/landing, avoid for landing if possible)</li>
+                        <li><strong>Crosswind:</strong> Wind from the side - requires correction to maintain track, makes takeoff/landing challenging</li>
+                    </ul>
+                    <p><strong>Calculating Crosswind Component:</strong> If wind is 30° off runway heading, crosswind is about half the wind speed. At 45°, it's about 70%. At 90°, it's 100% of wind speed.</p>
+                </div>
+
+                <h3>Density Altitude - The Performance Killer</h3>
+                <div class="warning-box">
+                    <p>Density altitude is pressure altitude corrected for temperature. High density altitude means thin air, which means:</p>
+                    <ul>
+                        <li>Less engine power (less oxygen to burn)</li>
+                        <li>Less propeller efficiency (less air to bite into)</li>
+                        <li>Less lift (thinner air over wings)</li>
+                    </ul>
+                    <p><strong>The Deadly Combo:</strong> High elevation + Hot day + Humid = Very high density altitude</p>
+                    <p><strong>Example:</strong> At 5,000 feet on a 95°F day, density altitude might be 8,000-9,000 feet. Your plane performs like it's at 9,000 feet.</p>
+                    <p><strong>Impact:</strong> Longer takeoff roll, reduced climb rate, longer landing distance. Many real-world accidents happen when pilots don't account for this.</p>
+                </div>
+
                 <h3>Time of Day Considerations</h3>
                 <ul>
-                    <li><strong>Dawn/Dusk:</strong> Beautiful but challenging visibility</li>
-                    <li><strong>Midday:</strong> Optimal visibility and thermal conditions</li>
-                    <li><strong>Night:</strong> Requires instrument proficiency and runway lighting knowledge</li>
+                    <li><strong>Dawn/Dusk:</strong> Beautiful but challenging - harder to see terrain and other aircraft, sun glare on instruments</li>
+                    <li><strong>Midday:</strong> Best visibility, but often bumpy due to thermal activity and convective turbulence</li>
+                    <li><strong>Evening:</strong> Calmer air as thermals die down, good for smooth flights</li>
+                    <li><strong>Night:</strong> For experienced pilots only - requires different techniques, harder to judge altitude, emergency landing options limited</li>
                 </ul>
             </section>
 
@@ -383,40 +409,207 @@
 
                 <h3>Landing Procedure</h3>
                 <ol class="procedure-list">
-                    <li>Approach at 3° glide slope and 50-100 feet altitude</li>
-                    <li>Maintain descent rate and airspeed</li>
-                    <li>Flare at 30-50 feet above ground</li>
-                    <li>Touchdown smoothly at 60-65 knots</li>
-                    <li>Apply brakes smoothly and use rudder to stay straight</li>
-                    <li>Retract flaps on the ground, taxi to parking, and shut down</li>
+                    <li><strong>Pattern Entry (1000 feet AGL):</strong> Enter on a 45° angle to the downwind leg, parallel to the runway</li>
+                    <li><strong>Downwind Leg:</strong> Fly parallel to runway at pattern altitude, abeam the numbers drop first notch of flaps, reduce power, begin descent</li>
+                    <li><strong>Base Turn:</strong> Turn 90° when runway is about 45° behind you, add second notch of flaps, continue descent</li>
+                    <li><strong>Final Approach:</strong> Turn to align with runway, add full flaps, establish descent at approach speed (1.3x stall speed, usually 65-70 knots)</li>
+                    <li><strong>Roundout:</strong> At about 20 feet, begin gradually reducing pitch while reducing throttle to idle</li>
+                    <li><strong>Flare:</strong> In ground effect, gently raise the nose to slow descent rate, let plane settle onto mains</li>
+                    <li><strong>Touchdown:</strong> Touch down on main wheels first, hold nose up, then gently lower nose wheel</li>
+                    <li><strong>Rollout:</strong> Keep centerline with rudder, apply brakes gently, exit at taxiway</li>
                 </ol>
+
+                <h3>Landing Techniques - What Makes a Good Landing</h3>
+                <div class="info-box highlight">
+                    <h4>The Perfect Landing - What You're Aiming For</h4>
+                    <ul>
+                        <li><strong>Stabilized Approach:</strong> On centerline, on glidepath, at approach speed by 500 feet AGL</li>
+                        <li><strong>Aim Point:</strong> Plan to touch down in the first third of the runway</li>
+                        <li><strong>Sight Picture:</strong> Look at the far end of the runway, not right in front of you</li>
+                        <li><strong>Flare Timing:</strong> Start the flare when the runway appears to "rise up"</li>
+                        <li><strong>Power to Idle:</strong> Pull throttle to idle during the flare</li>
+                        <li><strong>Keep Flying:</strong> Fly the plane all the way to the parking spot - landing doesn't end at touchdown</li>
+                    </ul>
+                </div>
+
+                <h3>Crosswind Landing Technique</h3>
+                <div class="info-box">
+                    <p>Wind rarely comes straight down the runway. Here's how to handle crosswinds:</p>
+                    <h4>Crab Method (Easier for Beginners)</h4>
+                    <ol>
+                        <li>On final, point the nose into the wind to maintain runway centerline (you'll be flying sideways)</li>
+                        <li>Just before touchdown, straighten the nose with rudder to align with runway</li>
+                        <li>Touch down while using ailerons to keep wings level</li>
+                    </ol>
+                    <h4>Wing-Low Method (More Advanced)</h4>
+                    <ol>
+                        <li>Use ailerons to lower the upwind wing, keeping centerline</li>
+                        <li>Use opposite rudder to keep nose aligned with runway</li>
+                        <li>Touch down on the upwind main wheel first</li>
+                    </ol>
+                    <p><strong>Wind Limits:</strong> If the crosswind is stronger than your skill level, find a runway more aligned with the wind or wait for better conditions.</p>
+                </div>
+
+                <h3>When to Go Around</h3>
+                <div class="warning-box">
+                    <h4>⚠️ Never Be Afraid to Go Around</h4>
+                    <p>Going around is NOT a failure - it's good decision making. Go around if:</p>
+                    <ul>
+                        <li>You're too fast or too slow on final approach</li>
+                        <li>You're not aligned with the runway by 300 feet AGL</li>
+                        <li>You're floating past the first third of the runway</li>
+                        <li>You bounce hard and the plane is out of control</li>
+                        <li>An animal, vehicle, or another aircraft is on the runway</li>
+                        <li>Something just doesn't feel right</li>
+                    </ul>
+                    <p><strong>Go-Around Procedure:</strong> Full power, carb heat off, pitch for climb, retract flaps gradually, climb out, and set up for another approach. Simple.</p>
+                </div>
             </section>
 
             <!-- Aerodynamics -->
             <section id="aerodynamics" class="section">
                 <h2>Basic Aerodynamics for Flight Understanding</h2>
+                <p>You don't need a physics degree, but understanding these concepts will make you a better pilot and help you understand why your plane does what it does.</p>
                 
                 <div class="aero-grid">
                     <div class="aero-card">
                         <h4>Lift</h4>
-                        <p>Upward force generated by wings. Increases with speed and pitch, too much pitch causes stalls.</p>
+                        <p>The upward force created by air flowing over the wings. As your speed increases, lift increases. As you pitch up (increase angle of attack), lift increases up to a point - then you stall.</p>
+                        <p><strong>Practical tip:</strong> During takeoff, you'll feel the controls get lighter as you gain speed - that's increasing lift. Once you have enough lift (around 60-70 knots in a Cessna 172), gently pull back to rotate.</p>
+                    </div>
+                    <div class="aero-card">
+                        <h4>Weight</h4>
+                        <p>Gravity pulling the aircraft down. Weight is constant (unless you burn fuel or drop cargo). To fly, lift must overcome weight.</p>
+                        <p><strong>Practical tip:</strong> A heavier plane needs more speed to generate enough lift for takeoff. This is why you calculate takeoff performance based on weight, temperature, and altitude.</p>
+                    </div>
+                    <div class="aero-card">
+                        <h4>Thrust</h4>
+                        <p>Forward force from the engine/propeller pushing the aircraft through the air. More throttle = more thrust.</p>
+                        <p><strong>Practical tip:</strong> In level flight, thrust must equal drag. If you want to go faster, add power. If you want to maintain altitude while going slower, you might need to add power (seems backwards, but it's true).</p>
                     </div>
                     <div class="aero-card">
                         <h4>Drag</h4>
-                        <p>Air resistance, increases with speed and flap extension.</p>
+                        <p>Air resistance opposing forward motion. Drag increases exponentially with speed - double your speed, quadruple your drag.</p>
+                        <p><strong>Practical tip:</strong> Flaps increase drag (and lift). Use them to slow down on approach without pitching down steeply. Gear down also adds lots of drag.</p>
                     </div>
                     <div class="aero-card">
                         <h4>Stall</h4>
-                        <p>Loss of lift from low speed or high pitch. Recovery: pitch nose down and regain speed.</p>
-                    </div>
-                    <div class="aero-card">
-                        <h4>Speed-Altitude Relationship</h4>
-                        <p>Higher speed = more lift = climb; lower speed = less lift = descent. Trim balances this.</p>
+                        <p>Loss of lift when the critical angle of attack is exceeded (usually 15-18°). Can happen at ANY speed if you pull back too hard. The wing stops flying smoothly.</p>
+                        <p><strong>Recovery:</strong> Immediately release back pressure (push forward), apply full power, level the wings with rudder, then gently pull out of the dive.</p>
                     </div>
                     <div class="aero-card">
                         <h4>Torque Effect</h4>
-                        <p>Propeller spin pulls the nose left; use right rudder to keep straight.</p>
+                        <p>Propeller rotation creates a turning force that tries to roll and yaw the aircraft. In most planes, this pulls you left.</p>
+                        <p><strong>Practical tip:</strong> On takeoff, you'll need constant right rudder to stay on centerline. As you gain speed, reduce the rudder input. This is normal!</p>
                     </div>
+                </div>
+
+                <h3>Angle of Attack (AoA) - The Most Important Concept</h3>
+                <div class="info-box highlight">
+                    <p>Angle of Attack is the angle between the wing's chord line and the direction of the airflow. This is NOT the same as pitch attitude.</p>
+                    <ul>
+                        <li><strong>Low AoA:</strong> Wing is slicing through the air efficiently - fast cruise flight</li>
+                        <li><strong>Moderate AoA:</strong> Good lift without too much drag - normal flight</li>
+                        <li><strong>High AoA:</strong> Maximum lift but lots of drag - slow flight, landing approach</li>
+                        <li><strong>Critical AoA (around 15-18°):</strong> The wing stalls - airflow separates and lift collapses</li>
+                    </ul>
+                    <p><strong>Key insight:</strong> You can stall at any speed and any attitude. You stall when you exceed the critical angle of attack. This is why you can stall in a dive if you pull back too hard on the stick.</p>
+                </div>
+
+                <h3>Power vs. Pitch - The Fundamental Relationship</h3>
+                <div class="info-box">
+                    <p>One of the hardest things for new pilots to grasp:</p>
+                    <ul>
+                        <li><strong>Power controls altitude (eventually):</strong> Add power, and you'll climb. Reduce power, and you'll descend - assuming you maintain the same pitch.</li>
+                        <li><strong>Pitch controls airspeed (eventually):</strong> Pitch down, you speed up. Pitch up, you slow down - assuming constant power.</li>
+                    </ul>
+                    <p><strong>In practice:</strong> They work together. To climb: add power AND pitch up. To descend: reduce power AND pitch down. To go faster in level flight: add power and pitch down slightly to maintain altitude. To slow down: reduce power and pitch up slightly.</p>
+                </div>
+
+                <h3>Ground Effect</h3>
+                <p>When you're flying within one wingspan's height above the ground, the ground interferes with wingtip vortices, reducing drag and increasing lift efficiency. This is why:</p>
+                <ul>
+                    <li>Your plane might "float" during landing if you come in too fast</li>
+                    <li>You can sometimes get airborne before you have sustainable flying speed (then sink back down)</li>
+                    <li>You need to re-trim when climbing out of ground effect after takeoff</li>
+                </ul>
+
+                <h3>Load Factor and G-Forces</h3>
+                <div class="warning-box">
+                    <p>When you turn, you increase the load on the wings. A 60-degree bank angle doubles the load factor (2G). This means:</p>
+                    <ul>
+                        <li>Your stall speed increases (multiply by √load factor)</li>
+                        <li>You need more lift, so you need more speed or higher angle of attack</li>
+                        <li>Steep turns near the ground are dangerous - if you stall, you don't have room to recover</li>
+                    </ul>
+                    <p><strong>Practical tip:</strong> Keep your turns shallow (20-30° bank) when flying slow or near the ground. Save steep turns for altitude.</p>
+                </div>
+            </section>
+
+            <!-- Fuel Management -->
+            <section id="fuel-management" class="section">
+                <h2>Fuel Management and Endurance</h2>
+                <p>Running out of fuel is embarrassing in the simulator and deadly in real life. Let's make sure that never happens.</p>
+
+                <h3>Understanding Fuel Systems</h3>
+                <div class="info-box">
+                    <h4>Cessna 172 Fuel System (Typical Trainer)</h4>
+                    <ul>
+                        <li><strong>Total Capacity:</strong> 53 gallons (2 tanks, 26.5 gallons each)</li>
+                        <li><strong>Usable Fuel:</strong> 50 gallons (some fuel can't be used)</li>
+                        <li><strong>Fuel Consumption:</strong> About 8-10 gallons per hour at cruise power</li>
+                        <li><strong>Range:</strong> Approximately 4-5 hours with reserves</li>
+                        <li><strong>Fuel Selector:</strong> LEFT, RIGHT, BOTH, OFF - usually fly on BOTH</li>
+                    </ul>
+                </div>
+
+                <h3>Pre-Flight Fuel Planning</h3>
+                <ol class="procedure-list">
+                    <li><strong>Calculate Required Fuel:</strong> Flight time + 30-45 minute reserve (VFR) or 45-60 minutes (IFR)</li>
+                    <li><strong>Check Fuel Quantity:</strong> Use the fuel gauges AND physically check tanks if possible (real world)</li>
+                    <li><strong>Consider Alternates:</strong> Have a backup airport within your fuel range</li>
+                    <li><strong>Account for Variables:</strong> Headwinds, higher altitudes, and cold weather all increase fuel consumption</li>
+                </ol>
+
+                <h3>In-Flight Fuel Management</h3>
+                <div class="tip-box">
+                    <h4>💡 Monitoring Your Fuel</h4>
+                    <ul>
+                        <li><strong>Check Regularly:</strong> Glance at fuel gauges every 15-20 minutes</li>
+                        <li><strong>Calculate Burn Rate:</strong> Note fuel at start, then check after 1 hour of flight to determine actual consumption</li>
+                        <li><strong>Update ETA:</strong> If you're burning more fuel than planned, recalculate your range</li>
+                        <li><strong>Switch Tanks:</strong> On aircraft with multiple tanks, switch periodically to maintain balance (follow POH)</li>
+                        <li><strong>Know Your Minimums:</strong> Never let fuel get below 1/4 tank if you can help it</li>
+                    </ul>
+                </div>
+
+                <h3>Fuel Efficiency Tips</h3>
+                <ul>
+                    <li><strong>Lean the Mixture:</strong> At altitude (above 3,000 feet), lean the mixture for better fuel economy</li>
+                    <li><strong>Optimal Altitude:</strong> Higher altitudes generally give better fuel economy (thinner air = less drag)</li>
+                    <li><strong>Cruise Power:</strong> 65-75% power is the sweet spot for most GA aircraft</li>
+                    <li><strong>Plan Your Route:</strong> Direct routes save fuel; avoid circling or unnecessary maneuvering</li>
+                </ul>
+
+                <h3>Emergency Fuel Situations</h3>
+                <div class="warning-box">
+                    <h4>⚠️ What to Do When Fuel is Low</h4>
+                    <ol>
+                        <li><strong>Declare Emergency if Needed:</strong> Don't be embarrassed - ATC will help</li>
+                        <li><strong>Find Nearest Airport:</strong> Use GPS or ask ATC for closest suitable airport</li>
+                        <li><strong>Reduce Power:</strong> Slow down to best-range speed (usually around 75 knots for C172)</li>
+                        <li><strong>Lean Aggressively:</strong> Lean as much as possible without rough running</li>
+                        <li><strong>Prepare for Forced Landing:</strong> If engines quits, pick a field and execute emergency landing procedures</li>
+                    </ol>
+                </div>
+
+                <h3>Different Aircraft, Different Systems</h3>
+                <div class="info-box">
+                    <p><strong>Single Engine Pistons:</strong> Usually simple - one tank or selector between tanks</p>
+                    <p><strong>Light Twins:</strong> Each engine has its own fuel system; know how to cross-feed</p>
+                    <p><strong>Turboprops:</strong> Fuel flow in pounds per hour instead of gallons; different power management</p>
+                    <p><strong>Jets:</strong> Multiple tanks, center of gravity considerations, specific burn procedures</p>
+                    <p><strong>Always:</strong> Read the aircraft's POH (Pilot Operating Handbook) for specific fuel procedures</p>
                 </div>
             </section>
 
@@ -438,23 +631,64 @@
                     </ul>
                 </div>
 
+                <h3>Understanding Airspace Classes</h3>
+                <div class="info-box highlight">
+                    <h4>U.S. Airspace System (Simplified)</h4>
+                    <ul>
+                        <li><strong>Class A (18,000+ feet):</strong> IFR only, ATC clearance required. You won't be here as a beginner.</li>
+                        <li><strong>Class B (Major airports like LAX, JFK):</strong> ATC clearance required to enter. Looks like upside-down wedding cake on charts.</li>
+                        <li><strong>Class C (Busy regional airports):</strong> Two-way radio communication required. 10nm radius, usually 4,000 feet high.</li>
+                        <li><strong>Class D (Towered airports):</strong> Two-way radio required. Typically 2,500 feet high.</li>
+                        <li><strong>Class E (Controlled airspace):</strong> No clearance needed for VFR, but weather minimums apply. Most airspace you'll fly in.</li>
+                        <li><strong>Class G (Uncontrolled):</strong> No ATC, typically surface to 700-1,200 feet AGL. Relaxed weather minimums.</li>
+                    </ul>
+                    <p><strong>Practical tip:</strong> As a beginner, start at Class D or uncontrolled (Class G) airports. Work up to busier airspace as you gain experience.</p>
+                </div>
+
+                <h3>VFR Weather Minimums - Know Before You Go</h3>
+                <div class="warning-box">
+                    <p>VFR requires minimum visibility and cloud clearance. These are LEGAL minimums - smart pilots add their own safety margins.</p>
+                    <h4>Basic VFR Minimums (Class E below 10,000 feet)</h4>
+                    <ul>
+                        <li><strong>Visibility:</strong> 3 statute miles</li>
+                        <li><strong>Cloud Clearance:</strong> 500 feet below, 1,000 feet above, 2,000 feet horizontal</li>
+                    </ul>
+                    <p><strong>Personal minimums for beginners:</strong> 5+ miles visibility, 3,000+ foot ceilings, light winds. There's no shame in waiting for better weather.</p>
+                </div>
+
                 <h3>VFR Sectional Charts</h3>
                 <p>MSFS 2024 includes built-in VFR charts showing:</p>
                 <ul>
-                    <li>Airport symbols and runway layouts</li>
-                    <li>Controlled airspace boundaries</li>
-                    <li>Terrain elevation and obstacles</li>
-                    <li>Navigation aids (VOR, NDB stations)</li>
-                    <li>Visual landmarks</li>
+                    <li><strong>Airport Symbols:</strong> Blue = towered, magenta = non-towered. Numbers show field elevation and runway length</li>
+                    <li><strong>Controlled Airspace:</strong> Blue lines (Class B), magenta circles (Class C/D), fuzzy magenta/blue (Class E)</li>
+                    <li><strong>Terrain Elevation:</strong> Color-coded (green low, yellow/brown higher, white highest)</li>
+                    <li><strong>Navigation Aids:</strong> VOR stations (compass rose), NDB (triangle), GPS waypoints</li>
+                    <li><strong>Obstacles:</strong> Towers and obstacles with maximum elevation</li>
+                    <li><strong>Visual Landmarks:</strong> Cities, roads, rivers, lakes clearly marked</li>
                 </ul>
+
+                <h3>Pilotage - Old School Navigation That Still Works</h3>
+                <div class="tip-box">
+                    <h4>💡 How Real Pilots Navigate Without GPS</h4>
+                    <ol>
+                        <li><strong>Pre-flight Planning:</strong> Mark route on chart, identify checkpoints (towns, rivers, highways)</li>
+                        <li><strong>Follow Features:</strong> Fly along easily identifiable features like coastlines, highways, railroads</li>
+                        <li><strong>Time and Distance:</strong> Note time over each checkpoint, compare to planned time</li>
+                        <li><strong>Groundspeed Check:</strong> If you're early/late, recalculate groundspeed and adjust ETA</li>
+                        <li><strong>Lost Procedures:</strong> If lost, climb for better view, identify prominent features, use VOR/GPS as backup</li>
+                    </ol>
+                    <p>Practice this even with GPS available - it's a great skill and teaches situational awareness.</p>
+                </div>
 
                 <h3>Dead Reckoning Navigation</h3>
                 <ol>
-                    <li>Plot course on map between departure and destination</li>
-                    <li>Measure distance and calculate heading</li>
-                    <li>Account for wind drift</li>
-                    <li>Calculate time en route based on groundspeed</li>
-                    <li>Identify checkpoints every 10-15 minutes</li>
+                    <li><strong>Plot Course:</strong> Draw a line on map between departure and destination</li>
+                    <li><strong>Measure Distance:</strong> Use chart scale to determine nautical miles</li>
+                    <li><strong>Calculate Heading:</strong> Use protractor to determine magnetic course</li>
+                    <li><strong>Account for Wind:</strong> Apply wind correction angle (right/left of course)</li>
+                    <li><strong>Calculate Groundspeed:</strong> True airspeed ± headwind/tailwind component</li>
+                    <li><strong>Calculate Time En Route:</strong> Distance ÷ Groundspeed = Time (in hours)</li>
+                    <li><strong>Identify Checkpoints:</strong> Mark checkpoints every 10-20 minutes along route</li>
                     <li>Verify position at each checkpoint</li>
                 </ol>
 
