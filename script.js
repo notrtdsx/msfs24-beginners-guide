@@ -1,27 +1,10 @@
 // ========================================
-// Theme Toggle Functionality
+// Dark Mode (Permanent)
 // ========================================
-const themeToggle = document.getElementById('themeToggle');
 const html = document.documentElement;
 
-// Check for saved theme preference or default to light mode
-const currentTheme = localStorage.getItem('theme') || 'light';
-html.setAttribute('data-theme', currentTheme);
-updateThemeIcon(currentTheme);
-
-themeToggle.addEventListener('click', () => {
-    const currentTheme = html.getAttribute('data-theme');
-    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-    
-    html.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
-    updateThemeIcon(newTheme);
-});
-
-function updateThemeIcon(theme) {
-    const icon = themeToggle.querySelector('.theme-icon');
-    icon.textContent = theme === 'light' ? '🌙' : '☀️';
-}
+// Set dark mode permanently
+html.setAttribute('data-theme', 'dark');
 
 // ========================================
 // Scroll Progress Bar
@@ -82,6 +65,24 @@ function highlightTOC() {
         if (link.getAttribute('href') === '#' + currentSection) {
             link.style.fontWeight = '600';
             link.style.color = 'var(--accent-primary)';
+            
+            // Auto-scroll the TOC to keep active item visible
+            const toc = document.querySelector('.toc');
+            if (toc) {
+                const linkTop = link.offsetTop;
+                const linkHeight = link.offsetHeight;
+                const tocScrollTop = toc.scrollTop;
+                const tocHeight = toc.clientHeight;
+                
+                // Check if link is out of view
+                if (linkTop < tocScrollTop || linkTop + linkHeight > tocScrollTop + tocHeight) {
+                    // Scroll to center the active link
+                    toc.scrollTo({
+                        top: linkTop - tocHeight / 2 + linkHeight / 2,
+                        behavior: 'smooth'
+                    });
+                }
+            }
         }
     });
 }
@@ -160,13 +161,6 @@ if ('IntersectionObserver' in window) {
 // Keyboard Navigation
 // ========================================
 document.addEventListener('keydown', (e) => {
-    // Press 'T' to toggle theme
-    if (e.key === 't' || e.key === 'T') {
-        if (!e.target.matches('input, textarea')) {
-            themeToggle.click();
-        }
-    }
-    
     // Press '?' to show keyboard shortcuts (optional feature)
     if (e.key === '?') {
         if (!e.target.matches('input, textarea')) {
@@ -177,7 +171,6 @@ document.addEventListener('keydown', (e) => {
 
 function showKeyboardShortcuts() {
     const shortcuts = {
-        'T': 'Toggle dark/light theme',
         '?': 'Show keyboard shortcuts',
         'Esc': 'Close modals'
     };
@@ -311,81 +304,11 @@ document.querySelectorAll('code').forEach(codeBlock => {
 });
 
 // ========================================
-// Search Functionality (Basic)
-// ========================================
-function initSearch() {
-    const searchButton = document.createElement('button');
-    searchButton.innerHTML = '🔍';
-    searchButton.className = 'search-button';
-    searchButton.setAttribute('aria-label', 'Search');
-    searchButton.style.cssText = `
-        background: var(--bg-secondary);
-        border: 2px solid var(--border-color);
-        border-radius: 8px;
-        padding: 8px 16px;
-        cursor: pointer;
-        font-size: 1.25rem;
-        margin-left: 10px;
-        transition: all 0.15s ease;
-    `;
-    
-    const navContainer = document.querySelector('.nav-container');
-    const logoContainer = document.querySelector('.logo');
-    navContainer.insertBefore(searchButton, navContainer.querySelector('.theme-toggle'));
-    
-    searchButton.addEventListener('click', () => {
-        const searchTerm = prompt('Search the guide:');
-        if (searchTerm) {
-            performSearch(searchTerm);
-        }
-    });
-}
-
-function performSearch(term) {
-    const content = document.querySelector('.content');
-    const text = content.textContent.toLowerCase();
-    const searchTerm = term.toLowerCase();
-    
-    if (text.includes(searchTerm)) {
-        // Find and scroll to first occurrence
-        const walker = document.createTreeWalker(
-            content,
-            NodeFilter.SHOW_TEXT,
-            null,
-            false
-        );
-        
-        let node;
-        while (node = walker.nextNode()) {
-            if (node.textContent.toLowerCase().includes(searchTerm)) {
-                const element = node.parentElement;
-                element.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                
-                // Highlight the match temporarily
-                const originalBg = element.style.background;
-                element.style.background = 'rgba(255, 193, 7, 0.3)';
-                element.style.transition = 'background 0.5s ease';
-                
-                setTimeout(() => {
-                    element.style.background = originalBg;
-                }, 3000);
-                
-                break;
-            }
-        }
-    } else {
-        alert(`No results found for "${term}"`);
-    }
-}
-
-initSearch();
-
-// ========================================
 // Initialize on Load
 // ========================================
 document.addEventListener('DOMContentLoaded', () => {
     console.log('MSFS 2024 Beginner Guide loaded successfully!');
-    console.log('Press "T" to toggle theme');
+    console.log('Dark mode active');
     console.log('Press "?" to see keyboard shortcuts');
     
     // Initial TOC highlight
